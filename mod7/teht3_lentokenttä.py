@@ -36,6 +36,10 @@ while komento != lopeta:
 
     else:
         print("komentoa ei tunnisteta")
+        print("komennot ovat: ")
+        print("luo")
+        print("hae")
+        print("lopeta")
 
 
     komento = input("Anna komento haluatko syöttää luoda uuden lentoaseman, hakea tai lopettaa ohjelman: ")
