@@ -1,14 +1,10 @@
 def lukujen_summa(luvut):
-    summa = 0 
-    
     for i in luvut:
         if i % 2 != 0:
             continue
         else:
             karsittu.append(i)
-
-    kokonailuku.clear
-    return summa, 
+    return 
 
 
 
