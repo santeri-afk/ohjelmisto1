@@ -28,8 +28,8 @@ while komento != lopeta:
     elif komento == "hae":
         haku = input("Anna hakemasi lentoaseman ICAO koodi: ")
         if haku in lentoaseman:
-            lentokentännimi = lentoaseman[haku]
-            print(f"Hakemasi lentoaseman nimi on {lentokentännimi}")
+            lentoasemannimi = lentoaseman[haku]
+            print(f"Hakemasi lentoaseman nimi on {lentoasemannimi}")
 
         else:
             print("lentoasemaa ei löytynyt antamallasi koodilla")
