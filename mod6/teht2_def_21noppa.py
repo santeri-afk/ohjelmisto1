@@ -1,16 +1,13 @@
-#en ihan ymmärtänyt tehtävän antoa mutta yritin tehdö siten miten ymmärsin
-
 import random
 
-maksimisilmäluku = int(input("Anna nopan maksimisilmäluku: "))
+def noppa(tahkot):
+    return random.randint(1, tahkot)
 
-def nopat(tahko):
-    noppa_luku = 0
-    while noppa_luku != maksimisilmäluku:
-        noppa_luku = random.randint(1, maksimisilmäluku)
-        print(f"heitit {noppa_luku}")
+maksimi = int(input("Anna nopan maksimisilmäluku: "))
 
-    else:
-        return
+while True:
+    silmaluku = noppa(maksimi)
+    print(f"heitit {silmaluku}")
 
-nopat(maksimisilmäluku)
+    if silmaluku == maksimi:
+        break
