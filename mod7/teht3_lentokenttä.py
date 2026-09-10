@@ -1,4 +1,4 @@
-lentokentät = {"EFHK":"Helsinki-Vantaa", 
+lentoaseman = {"EFHK":"Helsinki-Vantaa", 
                "EFOU":"Oulu", 
                "EFRO":"Rovaniemi", 
                "EFTU":"Turku"}
@@ -15,24 +15,24 @@ lopeta = "lopeta"
 
 while komento != lopeta:
     if komento == "luo":
-        icao = input("Anna uuden luomasi lentokentän ICAO koodi: ")
-        nimi = input("Anna uuden luomasi lentokentän nimi: ")
+        icao = input("Anna uuden luomasi lentoaseman ICAO koodi: ")
+        nimi = input("Anna uuden luomasi lentoaseman nimi: ")
         
-        if icao in lentokentät or nimi in lentokentät:
-            print(f"lentokenttä {nimi} on jo lisätty")
+        if icao in lentoaseman or nimi in lentoaseman:
+            print(f"lentoaseman {nimi} on jo lisätty")
 
         else:
-            lentokentät[icao] = nimi
-            print(f"lentokenttä {nimi} onnistuneesti luotu")
+            lentoaseman[icao] = nimi
+            print(f"lentoaseman {nimi} onnistuneesti luotu")
 
     elif komento == "hae":
-        haku = input("Anna hakemasi lentokentän ICAO koodi: ")
-        if haku in lentokentät:
-            lentokentännimi = lentokentät[haku]
-            print(f"Hakemasi lentokentän nimi on {lentokentännimi}")
+        haku = input("Anna hakemasi lentoaseman ICAO koodi: ")
+        if haku in lentoaseman:
+            lentokentännimi = lentoaseman[haku]
+            print(f"Hakemasi lentoaseman nimi on {lentokentännimi}")
 
         else:
-            print("Lentokenttää ei löytynyt antamallasi koodilla")
+            print("lentoasemaa ei löytynyt antamallasi koodilla")
 
     else:
         print("komentoa ei tunnisteta")
